@@ -1,0 +1,15 @@
+<html lang="en">
+  {% load static %}
+  <!---->
+  {% include "head.html" %}
+  <!---->
+
+  <body>
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+    <script defer="defer" src="{% static 'assets/js/main.js' %}"></script>
+    {% block js %}{% endblock js %}
+  </body>
+
+</html>

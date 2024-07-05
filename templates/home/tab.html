@@ -1,0 +1,60 @@
+{% load static %}
+
+<section class="pt-4 pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link fs-5 active" data-bs-toggle="tab" href="#mostRead">
+              <i class="fab fa-readme me-2"></i>
+              Most read
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" data-bs-toggle="tab" href="#trending">
+              <i class="fas fa-fire me-2"></i>
+              Trending
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" data-bs-toggle="tab" href="#archived">
+              <i class="fas fa-trash me-2"></i>
+              Archived
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" data-bs-toggle="tab" href="#popular">
+              <i class="fas fa-eye me-2"></i>
+              Popular
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <!-- Most read tab START -->
+          <div class="tab-pane show active" id="mostRead">
+            <div class="row mostRead-inner"></div>
+          </div>
+          <!-- Most read tab END -->
+          <!-- Trending tab START -->
+          <div class="tab-pane show" id="trending">
+            <div class="row trending-inner">
+              
+            </div>
+          </div>
+          <!-- Trending tab END -->
+          <!-- Trending tab START -->
+          <div class="tab-pane show" id="popular">
+            <div class="row popular-inner"></div>
+          </div>
+          <!-- Trending tab END -->
+          <!-- Trending tab START -->
+          <div class="tab-pane show" id="archived">
+            <div class="row archived-inner"></div>
+          </div>
+          <!-- Trending tab END -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

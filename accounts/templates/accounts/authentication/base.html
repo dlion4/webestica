@@ -1,0 +1,14 @@
+{% extends "accounts/base.html" %}
+{% load static %}
+<!---->
+{% block title %}{{ block.super }}
+  | Dashboard |
+{% endblock title %}
+<!---->
+{% block js %}
+  <!-- Include your JavaScript files -->
+  <script defer="defer" src="{% static 'assets/js/main.js' %}"></script>
+  <script type="module" defer="defer" src="{% static 'assets/js/auth/main.js' %}"></script>
+  <script type="module" defer="defer" src="{% static 'assets/js/auth/login.js' %}"></script>
+  <script type="module" defer="defer" src="{% static 'assets/js/auth/register.js' %}"></script>
+{% endblock js %}
